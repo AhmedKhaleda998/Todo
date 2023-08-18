@@ -10,7 +10,7 @@ This repository contains a simple Todo application built using Node.js, TypeScri
 
 ## Getting Started
 
-- Clone the repository: git clone https://github.com/ahmedkhaleda998/todo.git
+- Clone the repository: git clone https://github.com/AhmedKhaleda998/Todo.git
 - cd todo
 - Install the dependencies: npm install
 - Build the TypeScript code: tsc
