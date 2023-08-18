@@ -19,6 +19,15 @@ router.post('/todo', (req, res, next) => {
         todos: todos
     });
 });
+router.get('/todo/:todoId', (req, res, next) => {
+    const params = req.params;
+    const todoId = params.todoId;
+    const todo = todos.find(todoItem => todoItem.id === todoId);
+    if (todo) {
+        return res.status(200).json({ todo: todo });
+    }
+    res.status(404).json({ message: 'Could not find todo for this id.' });
+});
 router.put('/todo/:todoId', (req, res, next) => {
     const params = req.params;
     const todoId = params.todoId;
