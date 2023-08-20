@@ -32,8 +32,7 @@ The following API endpoints are available:
 The project structure is organized as follows:
 
 - `src/`: Contains the TypeScript source code.
-  - `controllers/`: Controllers handling the route logic.
-  - `routes/`: Express route definitions.
+  - `routes/`: Express route definitions and handling the route logic.
   - `models/`: TypeScript interfaces for data models.
   - `app.ts`: Main application file where Express is configured.
 - `dist/`: Compiled JavaScript files (generated after running `npm run build`).
